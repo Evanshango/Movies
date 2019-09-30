@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/popularFragment">
 
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.evans.videos.fragments.popular.PopularVideoFragment"
+        android:label="Popular"
+        tools:layout="@layout/popular_video_fragment" />
+    <fragment
+        android:id="@+id/topRatedFragment"
+        android:name="com.evans.videos.fragments.top.TopRatedVideoFragment"
+        android:label="Top Rated"
+        tools:layout="@layout/top_rated_video_fragment" />
+    <fragment
+        android:id="@+id/upcomingFragment"
+        android:name="com.evans.videos.fragments.upcoming.UpcomingVideoFragment"
+        android:label="Upcoming"
+        tools:layout="@layout/upcoming_video_fragment" />
 </navigation>
